@@ -1,1 +1,1 @@
-worker python algotrading.py
+worker: python algotrading.py
