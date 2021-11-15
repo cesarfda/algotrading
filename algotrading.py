@@ -28,7 +28,7 @@ def get_data():
 '''
 Place a buy order on alpaca for a given symbol and quantity
 '''
-def buy(q, s): # Returns nothing, makes call to buy stock
+def buy(q, s): 
     api.submit_order(
         symbol=s,
         qty=q,
@@ -40,7 +40,7 @@ def buy(q, s): # Returns nothing, makes call to buy stock
 '''
 Place a sell order on alpaca for a given symbol and quantity
 '''
-def sell(q, s): # Returns nothing, makes call to sell stock
+def sell(q, s):
     api.submit_order(
         symbol=s,
         qty=q,
@@ -53,7 +53,7 @@ def sell(q, s): # Returns nothing, makes call to sell stock
 Determine what ticker will be used to trade
 '''
 
-symb = "SPY" # Ticker of stock you want to trade
+symb = "SPY" 
 pos_held = False
 
 '''
