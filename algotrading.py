@@ -78,12 +78,12 @@ while True:
 
       if ma + 0.1 < last_price and not pos_held:
           print("Buy")
-          buy(25, symb)
+          buy(50, symb)
           pos_held = True
       
       elif ma - 0.1 > last_price and pos_held:
           print("Sell")
-          sell(25, symb)
+          sell(50, symb)
           pos_held = False
       
       time.sleep(60)
